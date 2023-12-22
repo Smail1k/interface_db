@@ -1,0 +1,12 @@
+PyJWT~=2.8.0
+fastapi==0.103.0
+pydantic~=2.3.0
+uvicorn==0.23.2
+passlib~=1.7.4
+starlette~=0.27.0
+TwoCaptcha~=0.0.1
+python-jose==3.3.0
+python-multipart==0.0.6
+pyodbc~=5.0.1
+SQLAlchemy~=2.0.23
+discord~=2.3.2
