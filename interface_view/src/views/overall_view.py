@@ -13,18 +13,8 @@ def drawer(page: Page):
 
         match e.control.content.controls[1].value:
             case "Профиль":
-                if e.data == "true":
-                    if page.theme_mode == "light":
-                        e.control.content.controls[0].src = "../assets/person_hover.png"
-                    else:
-                        e.control.content.controls[0].color = None
-                        e.control.content.controls[0].src = "../assets/person_inv_hover.png"
-                else:
-                    if page.theme_mode == "light":
-                        e.control.content.controls[0].src = "../assets/person.png"
-                    else:
-                        e.control.content.controls[0].color = colors.WHITE
-                        e.control.content.controls[0].src = "../assets/person.png"
+                e.control.content.controls[0].name = icons.PERSON \
+                    if e.data == "true" else icons.PERSON_OUTLINED
             case "Пользователи":
                 e.control.content.controls[0].name = icons.SUPERVISED_USER_CIRCLE \
                     if e.data == "true" else icons.SUPERVISED_USER_CIRCLE_OUTLINED
@@ -84,7 +74,7 @@ def drawer(page: Page):
         controls=[
             Container(
                 content=Row(
-                    controls=[Image(src="../assets/person.png"),
+                    controls=[Icon(name=icons.PERSON_OUTLINED),
                               Text(value="Профиль")]
                 ),
                 on_click=on_click,
