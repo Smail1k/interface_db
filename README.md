@@ -1,1 +1,1 @@
-This repository includes a back-end written in the Fast-api/python framework, as well as a front-end written in the Flet/python framework, and is my first experience of creating a custom application and fully working with a database.
+This repository includes a back-end written in the Fast-api/python framework, as well as a front-end written in the Flet/python framework, and is my first experience of creating a custom application and fully working with a database. To work with this project, you should separate the "interface_back" and "interface_view" packages.
